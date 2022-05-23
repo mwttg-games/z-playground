@@ -14,6 +14,7 @@
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <project.reporting.outputEncoding>UTF-8</project.reporting.outputEncoding>
         <!-- Dependencies -->
+        <basic.opengl.version>1.0.0-SNAPSHOT</basic.opengl.version>
         <logback.version>1.2.11</logback.version>
         <!-- Plugins -->
         <checkstyle.maven.plugin.version>3.1.2</checkstyle.maven.plugin.version>
@@ -27,6 +28,12 @@
             <groupId>ch.qos.logback</groupId>
             <artifactId>logback-classic</artifactId>
             <version>${logback.version}</version>
+        </dependency>
+        <!-- Game framework -->
+        <dependency>
+            <groupId>io.github.mwttg-games</groupId>
+            <artifactId>opengl-basic-utilities</artifactId>
+            <version>${basic.opengl.version}</version>
         </dependency>
     </dependencies>
 
