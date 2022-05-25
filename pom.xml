@@ -16,6 +16,7 @@
         <!-- Dependencies -->
         <basic.opengl.version>1.0.0-SNAPSHOT</basic.opengl.version>
         <logback.version>1.2.11</logback.version>
+        <platform.ecs.version>1.0.0-SNAPSHOT</platform.ecs.version>
         <!-- Plugins -->
         <checkstyle.maven.plugin.version>3.1.2</checkstyle.maven.plugin.version>
         <checkstyle.version>10.2</checkstyle.version>
@@ -29,11 +30,16 @@
             <artifactId>logback-classic</artifactId>
             <version>${logback.version}</version>
         </dependency>
-        <!-- Game framework -->
+        <!-- own stuff -->
         <dependency>
             <groupId>io.github.mwttg-games</groupId>
             <artifactId>opengl-basic-utilities</artifactId>
             <version>${basic.opengl.version}</version>
+        </dependency>
+        <dependency>
+            <groupId>io.github.mwttg-games</groupId>
+            <artifactId>platform-ecs</artifactId>
+            <version>${platform.ecs.version}</version>
         </dependency>
     </dependencies>
 

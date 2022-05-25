@@ -17,9 +17,9 @@ public final class ConfigurationFactory {
         true,
         true,
         false,
-        0.4f,
-        0.4f,
-        0.4f,
+        0.25f,
+        0.25f,
+        0.25f,
         0.1f,
         100.0f);
   }
