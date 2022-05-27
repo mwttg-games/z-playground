@@ -7,7 +7,7 @@ public final class ProjectionMatrix {
   private ProjectionMatrix() {
   }
 
-  public static Matrix4f get() {
+  public static Matrix4f get640x480() {
     return new Matrix4f().setOrtho(0.0f, 20.0f, 0.0f, 15.0f, 0.01f, 100.0f);
   }
 }

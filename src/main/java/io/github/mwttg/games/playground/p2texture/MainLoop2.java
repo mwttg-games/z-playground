@@ -15,7 +15,7 @@ public final class MainLoop2 {
   private final DrawComponent level;
   private final Matrix4f model = new Matrix4f();
   private final Matrix4f view = ViewMatrix.get();
-  private final Matrix4f projection = ProjectionMatrix.get();
+  private final Matrix4f projection = ProjectionMatrix.get640x480();
 
   public MainLoop2() {
     final var textureId = Texture.create("./data/p2/level.png");
