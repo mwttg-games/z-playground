@@ -15,7 +15,7 @@ public class Playground2 {
     LOG.info(config.prettyPrint());
     final var id = GameWindow.create(config);
 
-    new MainLoop2().loop(id);
+    new MainLoop().loop(id);
 
     CleanUp.purge();
   }
