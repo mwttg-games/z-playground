@@ -2,8 +2,8 @@ package io.github.mwttg.games.playground.p5sizetest;
 
 import io.github.mwttg.games.opengl.basic.utilities.geometry.MeshFactory;
 import io.github.mwttg.games.opengl.basic.utilities.texture.Texture;
-import io.github.mwttg.games.platform.ecs.component.SpriteComponent;
-import io.github.mwttg.games.platform.ecs.system.SpriteSystem;
+import io.github.mwttg.games.platform.ecs.component.draw.SpriteComponent;
+import io.github.mwttg.games.platform.ecs.system.draw.SpriteSystem;
 import io.github.mwttg.games.playground.common.ProjectionMatrix;
 import io.github.mwttg.games.playground.common.ViewMatrix;
 import org.joml.Matrix4f;

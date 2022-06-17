@@ -1,8 +1,8 @@
 package io.github.mwttg.games.playground.p2texture;
 
 import io.github.mwttg.games.opengl.basic.utilities.texture.Texture;
-import io.github.mwttg.games.platform.ecs.component.SpriteComponent;
-import io.github.mwttg.games.platform.ecs.system.SpriteSystem;
+import io.github.mwttg.games.platform.ecs.component.draw.SpriteComponent;
+import io.github.mwttg.games.platform.ecs.system.draw.SpriteSystem;
 import io.github.mwttg.games.playground.common.PlaneFactory;
 import io.github.mwttg.games.playground.common.ProjectionMatrix;
 import io.github.mwttg.games.playground.common.ViewMatrix;
