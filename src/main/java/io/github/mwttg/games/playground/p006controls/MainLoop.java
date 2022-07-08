@@ -1,4 +1,4 @@
-package io.github.mwttg.games.playground.p6controls;
+package io.github.mwttg.games.playground.p006controls;
 
 import io.github.mwttg.games.platform.ecs.component.movement.PlayerActionComponent;
 import io.github.mwttg.games.platform.ecs.system.movement.PlayerActionSystem;

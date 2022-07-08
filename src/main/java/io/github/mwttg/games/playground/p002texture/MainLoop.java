@@ -1,4 +1,4 @@
-package io.github.mwttg.games.playground.p2texture;
+package io.github.mwttg.games.playground.p002texture;
 
 import io.github.mwttg.games.opengl.basic.utilities.texture.Texture;
 import io.github.mwttg.games.platform.ecs.component.draw.SpriteComponent;

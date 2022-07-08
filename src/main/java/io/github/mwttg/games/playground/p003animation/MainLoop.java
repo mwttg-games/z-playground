@@ -1,4 +1,4 @@
-package io.github.mwttg.games.playground.p3animation;
+package io.github.mwttg.games.playground.p003animation;
 
 import io.github.mwttg.games.opengl.basic.utilities.geometry.MeshFactory;
 import io.github.mwttg.games.opengl.basic.utilities.texture.Texture;
