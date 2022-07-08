@@ -1,6 +1,8 @@
 package io.github.mwttg.games.playground.common;
 
 import io.github.mwttg.games.opengl.basic.utilities.gamewindow.OpenGlConfiguration;
+import io.github.mwttg.games.platform.ecs.PlayerConfiguration;
+import io.github.mwttg.games.platform.ecs.SceneConfiguration;
 
 public final class ConfigurationFactory {
 
@@ -22,5 +24,13 @@ public final class ConfigurationFactory {
         0.25f,
         0.1f,
         100.0f);
+  }
+
+  public static PlayerConfiguration createPlayerConfiguration() {
+    return new PlayerConfiguration(8.0f);
+  }
+
+  public static SceneConfiguration createSceneConfiguration() {
+    return new SceneConfiguration(12.0f, 38.0f);
   }
 }
