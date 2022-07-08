@@ -22,14 +22,14 @@ final class MainLoop {
 
   MainLoop() {
     // battery 1
-    final var textureId1 = Texture.create("./data/p3/battery.png");
+    final var textureId1 = Texture.create("./data/p003/battery.png");
     final var planeData1 = MeshFactory.createAnimatedSprite(7, 1.0f, 1.0f);
     final var timings1 = List.of(1000, 750, 500, 250, 150, 150, 1000);
     this.battery1 =
         SpriteAnimationComponent.create(planeData1.geometry(), planeData1.textureCoordinates(), textureId1, timings1);
 
     //battery 2
-    final var textureId2 = Texture.create("./data/p3/battery2.png");
+    final var textureId2 = Texture.create("./data/p003/battery2.png");
     final var planeData2 = MeshFactory.createAnimatedSprite(9, 4.0f, 4.0f);
     final var timings2 = List.of(1000, 75, 125, 175, 250, 500, 750, 875, 1000);
     this.battery2 =

@@ -19,7 +19,7 @@ class MainLoop {
   private final Matrix4f projection = ProjectionMatrix.get320x180();
 
   MainLoop() {
-    final var textureId = Texture.create("./data/p4/screen-320x180.png");
+    final var textureId = Texture.create("./data/p004/screen-320x180.png");
     final var planeData = MeshFactory.createAnimatedSprite(2, 32.0f, 18.0f);
     final var timings = List.of(1000, 1000);
     this.component = SpriteAnimationComponent.create(planeData.geometry(), planeData.textureCoordinates(), textureId, timings);

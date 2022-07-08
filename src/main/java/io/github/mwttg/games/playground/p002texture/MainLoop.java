@@ -18,7 +18,7 @@ final class MainLoop {
   private final Matrix4f projection = ProjectionMatrix.get640x480();
 
   public MainLoop() {
-    final var textureId = Texture.create("./data/p2/level.png");
+    final var textureId = Texture.create("./data/p002/level.png");
     final var planeData = PlaneFactory.create(20, 15);
     this.level = SpriteComponent.create(planeData.geometry(), planeData.textureCoordinates(), textureId);
 

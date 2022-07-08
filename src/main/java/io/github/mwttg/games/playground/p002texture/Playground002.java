@@ -6,9 +6,9 @@ import io.github.mwttg.games.playground.common.ConfigurationFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class Playground2 {
+public class Playground002 {
 
-  private static final Logger LOG = LoggerFactory.getLogger(Playground2.class);
+  private static final Logger LOG = LoggerFactory.getLogger(Playground002.class);
 
   public static void main(String[] args) {
     final var config = ConfigurationFactory.createOpenGlConfiguration();
