@@ -1,4 +1,4 @@
-package io.github.mwttg.games.playground.p006movement;
+package io.github.mwttg.games.playground.p007movement;
 
 import io.github.mwttg.games.opengl.basic.utilities.cleanup.CleanUp;
 import io.github.mwttg.games.opengl.basic.utilities.gamewindow.GameWindow;
@@ -6,9 +6,9 @@ import io.github.mwttg.games.playground.common.ConfigurationFactory;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-public class Playground006 {
+public class Playground007 {
 
-  private static final Logger LOG = LoggerFactory.getLogger(Playground006.class);
+  private static final Logger LOG = LoggerFactory.getLogger(Playground007.class);
 
   public static void main(String[] args) {
     final var config = ConfigurationFactory.createOpenGlConfiguration();
