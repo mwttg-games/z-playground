@@ -34,10 +34,10 @@ public final class ConfigurationFactory {
 
   }
   private static PlayerConfiguration createPlayerConfiguration() {
-    return new PlayerConfiguration(8.0f, 10.0f);
+    return new PlayerConfiguration(3.0f, 10.0f);
   }
 
   private static SceneConfiguration createSceneConfiguration() {
-    return new SceneConfiguration(10.0f, 20.0f);
+    return new SceneConfiguration(25.0f, 50.0f);
   }
 }
