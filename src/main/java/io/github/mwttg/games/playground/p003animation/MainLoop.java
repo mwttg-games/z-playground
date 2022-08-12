@@ -2,8 +2,8 @@ package io.github.mwttg.games.playground.p003animation;
 
 import io.github.mwttg.games.opengl.basic.utilities.geometry.MeshFactory;
 import io.github.mwttg.games.opengl.basic.utilities.texture.Texture;
-import io.github.mwttg.games.platform.ecs.component.draw.SpriteAnimationComponent;
-import io.github.mwttg.games.platform.ecs.system.draw.SpriteAnimationSystem;
+import io.github.mwttg.games.platform.draw.SpriteAnimationComponent;
+import io.github.mwttg.games.platform.draw.SpriteAnimationSystem;
 import io.github.mwttg.games.playground.common.ProjectionMatrix;
 import io.github.mwttg.games.playground.common.ViewMatrix;
 import java.util.List;

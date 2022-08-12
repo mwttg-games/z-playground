@@ -1,9 +1,6 @@
 package io.github.mwttg.games.playground.common;
 
 import io.github.mwttg.games.opengl.basic.utilities.gamewindow.OpenGlConfiguration;
-import io.github.mwttg.games.platform.ecs.GameState;
-import io.github.mwttg.games.platform.ecs.PlayerConfiguration;
-import io.github.mwttg.games.platform.ecs.SceneConfiguration;
 
 public final class ConfigurationFactory {
 
@@ -25,19 +22,5 @@ public final class ConfigurationFactory {
         0.25f,
         0.1f,
         100.0f);
-  }
-
-  public static GameState createGameState() {
-    final var playerConfiguration = createPlayerConfiguration();
-    final var sceneConfiguration = createSceneConfiguration();
-    return new GameState(playerConfiguration, sceneConfiguration);
-
-  }
-  private static PlayerConfiguration createPlayerConfiguration() {
-    return new PlayerConfiguration(3.0f, 10.0f);
-  }
-
-  private static SceneConfiguration createSceneConfiguration() {
-    return new SceneConfiguration(25.0f, 50.0f);
   }
 }
