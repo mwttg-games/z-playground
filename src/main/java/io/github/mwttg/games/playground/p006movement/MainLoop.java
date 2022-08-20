@@ -1,5 +1,6 @@
 package io.github.mwttg.games.playground.p006movement;
 
+import static io.github.mwttg.games.platform.player.states.PlayerState.DUST_EFFECT;
 import static io.github.mwttg.games.platform.player.states.PlayerState.FALL_LEFT;
 import static io.github.mwttg.games.platform.player.states.PlayerState.FALL_RIGHT;
 import static io.github.mwttg.games.platform.player.states.PlayerState.IDLE_LEFT;
@@ -127,6 +128,13 @@ public class MainLoop {
         SpriteAnimationComponent.create(airPlane.geometry(), airPlane.textureCoordinates(), fallLeftTextureId,
             airTimings);
 
+    final var dustPlaneData = MeshFactory.createAnimatedSprite(6, width, height);
+    final var dustTimings = List.of(50, 50, 50, 50, 50, 50);
+    final var dustTextureId = Texture.create("./data/p006/Effect_dust.png");
+    final var dust =
+        SpriteAnimationComponent.create(dustPlaneData.geometry(), dustPlaneData.textureCoordinates(), dustTextureId,
+            dustTimings);
+
     return Map.of(WALK_LEFT, walkLeft,
         WALK_RIGHT, walkRight,
         IDLE_LEFT, idleLeft,
@@ -134,6 +142,7 @@ public class MainLoop {
         JUMP_RIGHT, jumpRight,
         JUMP_LEFT, jumpLeft,
         FALL_RIGHT, fallRight,
-        FALL_LEFT, fallLeft);
+        FALL_LEFT, fallLeft,
+        DUST_EFFECT, dust);
   }
 }
