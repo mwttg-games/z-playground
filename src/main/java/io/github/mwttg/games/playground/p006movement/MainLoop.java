@@ -1,17 +1,21 @@
 package io.github.mwttg.games.playground.p006movement;
 
+import static io.github.mwttg.games.platform.player.states.PlayerState.FALL_LEFT;
+import static io.github.mwttg.games.platform.player.states.PlayerState.FALL_RIGHT;
 import static io.github.mwttg.games.platform.player.states.PlayerState.IDLE_LEFT;
 import static io.github.mwttg.games.platform.player.states.PlayerState.IDLE_RIGHT;
+import static io.github.mwttg.games.platform.player.states.PlayerState.JUMP_LEFT;
+import static io.github.mwttg.games.platform.player.states.PlayerState.JUMP_RIGHT;
 import static io.github.mwttg.games.platform.player.states.PlayerState.WALK_LEFT;
 import static io.github.mwttg.games.platform.player.states.PlayerState.WALK_RIGHT;
 
 import io.github.mwttg.games.opengl.basic.utilities.geometry.MeshFactory;
 import io.github.mwttg.games.opengl.basic.utilities.texture.Texture;
+import io.github.mwttg.games.platform.Timer;
 import io.github.mwttg.games.platform.draw.SpriteAnimationComponent;
-import io.github.mwttg.games.platform.player.TileSize;
 import io.github.mwttg.games.platform.entity.PlayerEntity;
 import io.github.mwttg.games.platform.entity.SceneEntity;
-import io.github.mwttg.games.platform.Timer;
+import io.github.mwttg.games.platform.player.TileSize;
 import io.github.mwttg.games.playground.common.ProjectionMatrix;
 import io.github.mwttg.games.playground.common.ViewMatrix;
 import java.util.List;
@@ -100,9 +104,36 @@ public class MainLoop {
         SpriteAnimationComponent.create(idlePlaneData.geometry(), idlePlaneData.textureCoordinates(), idleRightTextureId,
             idleTimings);
 
+    final var airPlane = MeshFactory.createAnimatedSprite(2, width, height);
+    final var airTimings = List.of(150, 150);
+
+    final var jumpRightTextureId = Texture.create("./data/p006/Player_jump_right.png");
+    final var jumpRight =
+        SpriteAnimationComponent.create(airPlane.geometry(), airPlane.textureCoordinates(), jumpRightTextureId,
+            airTimings);
+
+    final var jumpLeftTextureId = Texture.create("./data/p006/Player_jump_left.png");
+    final var jumpLeft =
+        SpriteAnimationComponent.create(airPlane.geometry(), airPlane.textureCoordinates(), jumpLeftTextureId,
+            airTimings);
+
+    final var fallRightTextureId = Texture.create("./data/p006/Player_fall_right.png");
+    final var fallRight =
+        SpriteAnimationComponent.create(airPlane.geometry(), airPlane.textureCoordinates(), fallRightTextureId,
+            airTimings);
+
+    final var fallLeftTextureId = Texture.create("./data/p006/Player_fall_left.png");
+    final var fallLeft =
+        SpriteAnimationComponent.create(airPlane.geometry(), airPlane.textureCoordinates(), fallLeftTextureId,
+            airTimings);
+
     return Map.of(WALK_LEFT, walkLeft,
         WALK_RIGHT, walkRight,
         IDLE_LEFT, idleLeft,
-        IDLE_RIGHT, idleRight);
+        IDLE_RIGHT, idleRight,
+        JUMP_RIGHT, jumpRight,
+        JUMP_LEFT, jumpLeft,
+        FALL_RIGHT, fallRight,
+        FALL_LEFT, fallLeft);
   }
 }
