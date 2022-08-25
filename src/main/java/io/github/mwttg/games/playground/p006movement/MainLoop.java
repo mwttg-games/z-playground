@@ -7,6 +7,7 @@ import static io.github.mwttg.games.platform.player.states.PlayerState.IDLE_LEFT
 import static io.github.mwttg.games.platform.player.states.PlayerState.IDLE_RIGHT;
 import static io.github.mwttg.games.platform.player.states.PlayerState.JUMP_LEFT;
 import static io.github.mwttg.games.platform.player.states.PlayerState.JUMP_RIGHT;
+import static io.github.mwttg.games.platform.player.states.PlayerState.ON_LADDER;
 import static io.github.mwttg.games.platform.player.states.PlayerState.WALK_LEFT;
 import static io.github.mwttg.games.platform.player.states.PlayerState.WALK_RIGHT;
 
@@ -49,7 +50,7 @@ public class MainLoop {
 
       // timing
       final var deltaTime = timer.getDeltaTime();
-      final var solidGrid = sceneEntity.solidGridComponent();
+      final var solidGrid = sceneEntity.sensorComponent();
 
       // physics
       playerEntity.update(deltaTime, solidGrid);
@@ -128,6 +129,14 @@ public class MainLoop {
         SpriteAnimationComponent.create(airPlane.geometry(), airPlane.textureCoordinates(), fallLeftTextureId,
             airTimings);
 
+    final var ladderPlane = MeshFactory.createAnimatedSprite(2, width, height);
+    final var ladderTimings = List.of(150, 150);
+    final var ladderTextureId = Texture.create("./data/p006/Player_climb.png");
+    final var onLadder =
+        SpriteAnimationComponent.create(ladderPlane.geometry(), ladderPlane.textureCoordinates(), ladderTextureId,
+            ladderTimings);
+
+
     final var dustPlaneData = MeshFactory.createAnimatedSprite(6, width, height);
     final var dustTimings = List.of(50, 50, 50, 50, 50, 50);
     final var dustTextureId = Texture.create("./data/p006/Effect_dust.png");
@@ -143,6 +152,7 @@ public class MainLoop {
         JUMP_LEFT, jumpLeft,
         FALL_RIGHT, fallRight,
         FALL_LEFT, fallLeft,
+        ON_LADDER, onLadder,
         DUST_EFFECT, dust);
   }
 }
