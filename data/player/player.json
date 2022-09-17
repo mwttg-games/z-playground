@@ -1,0 +1,63 @@
+{
+  "tileSize": {
+    "width": 1.0,
+    "height": 1.0
+  },
+  "animations": {
+    "WALK_LEFT": {
+      "frames": 6,
+      "spriteSheet": "./data/player/Player_walk_left.png",
+      "timings": [140, 140, 140, 140, 140, 140]
+    },
+    "WALK_RIGHT": {
+      "frames": 6,
+      "spriteSheet": "./data/player/Player_walk_right.png",
+      "timings": [140, 140, 140, 140, 140, 140]
+    },
+    "IDLE_LEFT": {
+      "frames": 3,
+      "spriteSheet": "./data/player/Player_idle_left.png",
+      "timings": [1500, 150, 250]
+    },
+    "IDLE_RIGHT": {
+      "frames": 3,
+      "spriteSheet": "./data/player/Player_idle_right.png",
+      "timings": [1500, 150, 250]
+    },
+    "JUMP_LEFT": {
+      "frames": 2,
+      "spriteSheet": "./data/player/Player_jump_left.png",
+      "timings": [150, 150]
+    },
+    "JUMP_RIGHT": {
+      "frames": 2,
+      "spriteSheet": "./data/player/Player_jump_right.png",
+      "timings": [150, 150]
+    },
+    "FALL_LEFT": {
+      "frames": 2,
+      "spriteSheet": "./data/player/Player_fall_left.png",
+      "timings": [150, 150]
+    },
+    "FALL_RIGHT": {
+      "frames": 2,
+      "spriteSheet": "./data/player/Player_fall_right.png",
+      "timings": [150, 150]
+    },
+    "CLIMB_LADDER_UP": {
+      "frames": 2,
+      "spriteSheet": "./data/player/Player_climb.png",
+      "timings": [150, 150]
+    },
+    "SLIDE_LADDER_DOWN": {
+      "frames": 2,
+      "spriteSheet": "./data/player/Player_climb.png",
+      "timings": [150, 150]
+    },
+    "DUST_EFFECT": {
+      "frames": 6,
+      "spriteSheet": "./data/player/Effect_dust.png",
+      "timings": [50, 50, 50, 50, 50, 50]
+    }
+  }
+}
