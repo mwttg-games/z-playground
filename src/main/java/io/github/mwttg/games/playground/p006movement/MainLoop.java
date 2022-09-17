@@ -1,5 +1,6 @@
 package io.github.mwttg.games.playground.p006movement;
 
+import static io.github.mwttg.games.platform.player.states.PlayerState.CLIMB_LADDER_UP;
 import static io.github.mwttg.games.platform.player.states.PlayerState.DUST_EFFECT;
 import static io.github.mwttg.games.platform.player.states.PlayerState.FALL_LEFT;
 import static io.github.mwttg.games.platform.player.states.PlayerState.FALL_RIGHT;
@@ -7,7 +8,7 @@ import static io.github.mwttg.games.platform.player.states.PlayerState.IDLE_LEFT
 import static io.github.mwttg.games.platform.player.states.PlayerState.IDLE_RIGHT;
 import static io.github.mwttg.games.platform.player.states.PlayerState.JUMP_LEFT;
 import static io.github.mwttg.games.platform.player.states.PlayerState.JUMP_RIGHT;
-import static io.github.mwttg.games.platform.player.states.PlayerState.ON_LADDER;
+import static io.github.mwttg.games.platform.player.states.PlayerState.SLIDE_LADDER_DOWN;
 import static io.github.mwttg.games.platform.player.states.PlayerState.WALK_LEFT;
 import static io.github.mwttg.games.platform.player.states.PlayerState.WALK_RIGHT;
 
@@ -144,7 +145,7 @@ public class MainLoop {
         SpriteAnimationComponent.create(dustPlaneData.geometry(), dustPlaneData.textureCoordinates(), dustTextureId,
             dustTimings);
 
-    return Map.of(WALK_LEFT, walkLeft,
+    var result = Map.of(WALK_LEFT, walkLeft,
         WALK_RIGHT, walkRight,
         IDLE_LEFT, idleLeft,
         IDLE_RIGHT, idleRight,
@@ -152,7 +153,10 @@ public class MainLoop {
         JUMP_LEFT, jumpLeft,
         FALL_RIGHT, fallRight,
         FALL_LEFT, fallLeft,
-        ON_LADDER, onLadder,
-        DUST_EFFECT, dust);
+        CLIMB_LADDER_UP, onLadder,
+        SLIDE_LADDER_DOWN, onLadder);
+    result.put(DUST_EFFECT, dust);
+
+    return result;
   }
 }
