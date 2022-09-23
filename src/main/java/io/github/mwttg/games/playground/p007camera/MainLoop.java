@@ -1,17 +1,12 @@
 package io.github.mwttg.games.playground.p007camera;
 
 import io.github.mwttg.games.platform.Timer;
+import io.github.mwttg.games.platform.camera.CameraSystem;
 import io.github.mwttg.games.platform.camera.ProjectionMatrix;
-import io.github.mwttg.games.platform.camera.ScrollViewMatrix;
 import io.github.mwttg.games.platform.entity.LevelDefinition;
 import io.github.mwttg.games.platform.entity.PlayerEntity;
-import io.github.mwttg.games.platform.entity.SceneEntity;
 import io.github.mwttg.games.platform.entity.WorldEntity;
-import io.github.mwttg.games.platform.level.CameraSystem;
-import io.github.mwttg.games.platform.level.LevelComponent;
-import io.github.mwttg.games.platform.level.LevelId;
 import io.github.mwttg.games.platform.level.LevelStateComponent;
-import io.github.mwttg.games.playground.common.ViewMatrix;
 import java.util.Map;
 import org.joml.Matrix4f;
 import org.lwjgl.glfw.GLFW;
@@ -40,7 +35,8 @@ public class MainLoop {
 
       // timing
       final var deltaTime = timer.getDeltaTime();
-      final var solidGrid = worldEntity.levelStateComponent().getLevelComponent().sensorComponent(); //sceneEntity.sensorComponent();
+      final var solidGrid =
+          worldEntity.levelStateComponent().getLevelComponent().sensorComponent(); //sceneEntity.sensorComponent();
 
 
       // physics
@@ -63,7 +59,7 @@ public class MainLoop {
     final var room3 = LevelDefinition.create("./data/p007/room3/room3.json");
     final var room4 = LevelDefinition.create("./data/p007/room4/room4.json");
     final var room5 = LevelDefinition.create("./data/p007/room5/room5.json");
-    final var levels=  Map.of(
+    final var levels = Map.of(
         room1.levelId(), room1,
         room2.levelId(), room2,
         room3.levelId(), room3,
