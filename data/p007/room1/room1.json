@@ -1,0 +1,36 @@
+{
+  "levelId" : {
+    "biome" : "CAVE",
+    "scene" : "ROOM1"
+  },
+  "dimension" : {
+    "width" : 60,
+    "height" : 10
+  },
+  "cameraType": "SCROLLABLE",
+  "solidGrid" : "./data/p007/room1/room1-solid.json",
+  "sprite" : "./data/p007/room1/room1.png",
+  "background" : "./data/p007/room1/room1-bg.png",
+  "connections" : {
+    "( 59.4  3.0) < ( 60.0  5.0)" : {
+      "levelId" : {
+        "biome" : "CAVE",
+        "scene" : "ROOM4"
+      },
+      "spawnPosition" : {
+        "x" : 0.2,
+        "y" : 17.0
+      }
+    },
+    "( 0.0  3.0) < ( 0.6  5.0)" : {
+      "levelId" : {
+        "biome" : "CAVE",
+        "scene" : "ROOM3"
+      },
+      "spawnPosition" : {
+        "x" : 58.8,
+        "y" : 24.0
+      }
+    }
+  }
+}

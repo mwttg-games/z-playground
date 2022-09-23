@@ -145,18 +145,17 @@ public class MainLoop {
         SpriteAnimationComponent.create(dustPlaneData.geometry(), dustPlaneData.textureCoordinates(), dustTextureId,
             dustTimings);
 
-    var result = Map.of(WALK_LEFT, walkLeft,
-        WALK_RIGHT, walkRight,
-        IDLE_LEFT, idleLeft,
-        IDLE_RIGHT, idleRight,
-        JUMP_RIGHT, jumpRight,
-        JUMP_LEFT, jumpLeft,
-        FALL_RIGHT, fallRight,
-        FALL_LEFT, fallLeft,
-        CLIMB_LADDER_UP, onLadder,
-        SLIDE_LADDER_DOWN, onLadder);
-    result.put(DUST_EFFECT, dust);
-
-    return result;
+    return Map.ofEntries(
+        Map.entry(WALK_LEFT, walkLeft),
+        Map.entry(WALK_RIGHT, walkRight),
+        Map.entry(IDLE_LEFT, idleLeft),
+        Map.entry(IDLE_RIGHT, idleRight),
+        Map.entry(JUMP_RIGHT, jumpRight),
+        Map.entry(JUMP_LEFT, jumpLeft),
+        Map.entry(FALL_RIGHT, fallRight),
+        Map.entry(FALL_LEFT, fallLeft),
+        Map.entry(CLIMB_LADDER_UP, onLadder),
+        Map.entry(SLIDE_LADDER_DOWN, onLadder),
+        Map.entry(DUST_EFFECT, dust));
   }
 }
