@@ -1,0 +1,16 @@
+{
+  "sceneId": {
+    "biome" : "WORLD",
+    "scene" : "SCENE1"
+  },
+  "dimension" : {
+    "width" : 20,
+    "height" : 10
+  },
+  "cameraType": "SCROLLABLE",
+  "solidGrid" : "./data/p006/level-solid-grid.json",
+  "sprite" : "./data/p006/level.png",
+  "background" : "./data/p006/world-bg.png",
+  "connections" : {
+  }
+}

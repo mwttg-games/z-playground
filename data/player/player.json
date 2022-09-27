@@ -7,12 +7,12 @@
     "WALK_LEFT": {
       "frames": 6,
       "spriteSheet": "./data/player/Player_walk_left.png",
-      "timings": [140, 140, 140, 140, 140, 140]
+      "timings": [75, 75, 75, 75, 75, 75]
     },
     "WALK_RIGHT": {
       "frames": 6,
       "spriteSheet": "./data/player/Player_walk_right.png",
-      "timings": [140, 140, 140, 140, 140, 140]
+      "timings": [75, 75, 75, 75, 75, 75]
     },
     "IDLE_LEFT": {
       "frames": 3,

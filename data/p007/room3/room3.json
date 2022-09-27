@@ -1,5 +1,5 @@
 {
-  "levelId" : {
+  "sceneId": {
     "biome" : "CAVE",
     "scene" : "ROOM3"
   },
@@ -13,7 +13,7 @@
   "background" : "./data/p007/room3/room3-bg.png",
   "connections" : {
     "( 59.4  24.0) < ( 60.0  25.0)" : {
-      "levelId" : {
+      "sceneId": {
         "biome" : "CAVE",
         "scene" : "ROOM1"
       },
@@ -23,7 +23,7 @@
       }
     },
     "( 59.4  11.0) < ( 60.0  12.0)" : {
-      "levelId" : {
+      "sceneId": {
         "biome" : "CAVE",
         "scene" : "ROOM2"
       },

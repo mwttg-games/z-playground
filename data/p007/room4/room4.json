@@ -1,5 +1,5 @@
 {
-  "levelId" : {
+  "sceneId": {
     "biome" : "CAVE",
     "scene" : "ROOM4"
   },
@@ -13,7 +13,7 @@
   "background" : "./data/p007/room4/room4-bg.png",
   "connections" : {
     "( 0.0  17.0) < ( 0.6  18.0)" : {
-      "levelId" : {
+      "sceneId": {
         "biome" : "CAVE",
         "scene" : "ROOM1"
       },
@@ -23,7 +23,7 @@
       }
     },
     "( 0.0  4.0) < ( 0.6  5.0)" : {
-      "levelId" : {
+      "sceneId": {
         "biome" : "CAVE",
         "scene" : "ROOM2"
       },
@@ -33,7 +33,7 @@
       }
     },
     "( 19.4  1.0) < ( 20.0  3.0)" : {
-      "levelId" : {
+      "sceneId": {
         "biome" : "CAVE",
         "scene" : "ROOM5"
       },
