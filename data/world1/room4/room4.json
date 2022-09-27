@@ -8,9 +8,9 @@
     "height" : 20
   },
   "cameraType": "SCROLLABLE",
-  "solidGrid" : "./data/p007/room4/room4-solid.json",
-  "sprite" : "./data/p007/room4/room4.png",
-  "background" : "./data/p007/room4/room4-bg.png",
+  "solidGrid" : "./data/world1/room4/room4-solid.json",
+  "sprite" : "./data/world1/room4/room4.png",
+  "background" : "./data/world1/room4/room4-bg.png",
   "connections" : {
     "( 0.0  17.0) < ( 0.6  18.0)" : {
       "sceneId": {

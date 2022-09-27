@@ -1,16 +1,16 @@
 {
   "sceneId": {
     "biome" : "CAVE",
-    "scene" : "ROOM2"
+    "scene" : "ROOM1"
   },
   "dimension" : {
     "width" : 60,
     "height" : 10
   },
   "cameraType": "SCROLLABLE",
-  "solidGrid" : "./data/p007/room2/room2-solid.json",
-  "sprite" : "./data/p007/room2/room2.png",
-  "background" : "./data/p007/room2/room2-bg.png",
+  "solidGrid" : "./data/world1/room1/room1-solid.json",
+  "sprite" : "./data/world1/room1/room1.png",
+  "background" : "./data/world1/room1/room1-bg.png",
   "connections" : {
     "( 59.4  3.0) < ( 60.0  5.0)" : {
       "sceneId": {
@@ -19,7 +19,7 @@
       },
       "spawnPosition" : {
         "x" : 0.2,
-        "y" : 4.0
+        "y" : 17.0
       }
     },
     "( 0.0  3.0) < ( 0.6  5.0)" : {
@@ -29,7 +29,7 @@
       },
       "spawnPosition" : {
         "x" : 58.8,
-        "y" : 11.0
+        "y" : 24.0
       }
     }
   }

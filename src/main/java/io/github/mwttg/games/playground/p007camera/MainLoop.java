@@ -51,11 +51,11 @@ public class MainLoop {
   }
 
   private WorldEntity createWorld() {
-    final var room1 = SceneDefinition.create("./data/p007/room1/room1.json");
-    final var room2 = SceneDefinition.create("./data/p007/room2/room2.json");
-    final var room3 = SceneDefinition.create("./data/p007/room3/room3.json");
-    final var room4 = SceneDefinition.create("./data/p007/room4/room4.json");
-    final var room5 = SceneDefinition.create("./data/p007/room5/room5.json");
+    final var room1 = SceneDefinition.create("./data/world1/room1/room1.json");
+    final var room2 = SceneDefinition.create("./data/world1/room2/room2.json");
+    final var room3 = SceneDefinition.create("./data/world1/room3/room3.json");
+    final var room4 = SceneDefinition.create("./data/world1/room4/room4.json");
+    final var room5 = SceneDefinition.create("./data/world1/room5/room5.json");
     final var levels = Map.of(
         room1.sceneId(), room1,
         room2.sceneId(), room2,

@@ -8,9 +8,9 @@
     "height" : 10
   },
   "cameraType": "FIXED",
-  "solidGrid" : "./data/p007/room5/room5-solid.json",
-  "sprite" : "./data/p007/room5/room5.png",
-  "background" : "./data/p007/room5/room5-bg.png",
+  "solidGrid" : "./data/world1/room5/room5-solid.json",
+  "sprite" : "./data/world1/room5/room5.png",
+  "background" : "./data/world1/room5/room5-bg.png",
   "connections" : {
     "( 0.0  4.0) < ( 0.6  6.0)" : {
       "sceneId": {

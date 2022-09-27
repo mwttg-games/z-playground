@@ -25,24 +25,16 @@
       "timings": [1500, 150, 250]
     },
     "JUMP_LEFT": {
-      "frames": 2,
-      "spriteSheet": "./data/player/Player_jump_left.png",
-      "timings": [150, 150]
+      "spriteSheet": "./data/player/Player_jump_left.png"
     },
     "JUMP_RIGHT": {
-      "frames": 2,
-      "spriteSheet": "./data/player/Player_jump_right.png",
-      "timings": [150, 150]
+      "spriteSheet": "./data/player/Player_jump_right.png"
     },
     "FALL_LEFT": {
-      "frames": 2,
-      "spriteSheet": "./data/player/Player_fall_left.png",
-      "timings": [150, 150]
+      "spriteSheet": "./data/player/Player_fall_left.png"
     },
     "FALL_RIGHT": {
-      "frames": 2,
-      "spriteSheet": "./data/player/Player_fall_right.png",
-      "timings": [150, 150]
+      "spriteSheet": "./data/player/Player_fall_right.png"
     },
     "CLIMB_LADDER_UP": {
       "frames": 2,
