@@ -4,6 +4,7 @@ import io.github.mwttg.games.platform.Timer;
 import io.github.mwttg.games.platform.entity.PlayerEntity;
 import io.github.mwttg.games.platform.entity.WorldEntity;
 import io.github.mwttg.games.platform.scene.SceneDefinition;
+import io.github.mwttg.games.platform.world.ActiveRespawn;
 import io.github.mwttg.games.playground.common.ProjectionMatrix;
 import io.github.mwttg.games.playground.common.ViewMatrix;
 import java.util.Map;
@@ -52,7 +53,8 @@ public class MainLoop {
   private WorldEntity createWorld() {
     final var scene = SceneDefinition.create("./data/p006/world.json");
     final var world = Map.of(scene.sceneId(), scene);
+    final var activeRespawn = new ActiveRespawn(scene.sceneId(), "DOES-NOT-EXISTS");
 
-    return new WorldEntity(scene.sceneId(), world);
+    return new WorldEntity(scene.sceneId(), world, activeRespawn);
   }
 }

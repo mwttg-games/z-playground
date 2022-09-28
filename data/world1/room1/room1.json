@@ -32,5 +32,7 @@
         "y" : 24.0
       }
     }
-  }
+  },
+  "respawns": {},
+  "deathZones": []
 }

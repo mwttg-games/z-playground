@@ -6,6 +6,8 @@ import io.github.mwttg.games.platform.camera.ProjectionMatrix;
 import io.github.mwttg.games.platform.entity.PlayerEntity;
 import io.github.mwttg.games.platform.entity.WorldEntity;
 import io.github.mwttg.games.platform.scene.SceneDefinition;
+import io.github.mwttg.games.platform.scene.SceneId;
+import io.github.mwttg.games.platform.world.ActiveRespawn;
 import java.util.Map;
 import org.joml.Matrix4f;
 import org.lwjgl.glfw.GLFW;
@@ -63,6 +65,8 @@ public class MainLoop {
         room4.sceneId(), room4,
         room5.sceneId(), room5);
 
-    return new WorldEntity(room3.sceneId(), levels);
+    final var activeRespawn = new ActiveRespawn(room5.sceneId(), "RESPAWN1");
+
+    return new WorldEntity(room3.sceneId(), levels, activeRespawn);
   }
 }

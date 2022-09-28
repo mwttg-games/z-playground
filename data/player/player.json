@@ -36,6 +36,9 @@
     "FALL_RIGHT": {
       "spriteSheet": "./data/player/Player_fall_right.png"
     },
+    "DEAD": {
+      "spriteSheet": "./data/player/Player_dead.png"
+    },
     "CLIMB_LADDER_UP": {
       "spriteSheet": "./data/player/Player_climb.png",
       "frames": 2,

@@ -1,36 +1,47 @@
 {
   "sceneId": {
-    "biome" : "CAVE",
-    "scene" : "ROOM3"
+    "biome": "CAVE",
+    "scene": "ROOM3"
   },
-  "dimension" : {
-    "width" : 60,
-    "height" : 30
+  "dimension": {
+    "width": 60,
+    "height": 30
   },
   "cameraType": "SCROLLABLE",
-  "solidGrid" : "./data/world1/room3/room3-solid.json",
-  "sprite" : "./data/world1/room3/room3.png",
-  "background" : "./data/world1/room3/room3-bg.png",
-  "connections" : {
-    "( 59.4  24.0) < ( 60.0  25.0)" : {
+  "solidGrid": "./data/world1/room3/room3-solid.json",
+  "sprite": "./data/world1/room3/room3.png",
+  "background": "./data/world1/room3/room3-bg.png",
+  "connections": {
+    "( 59.4  24.0) < ( 60.0  25.0)": {
       "sceneId": {
-        "biome" : "CAVE",
-        "scene" : "ROOM1"
+        "biome": "CAVE",
+        "scene": "ROOM1"
       },
-      "spawnPosition" : {
-        "x" : 0.2,
-        "y" : 4.0
+      "spawnPosition": {
+        "x": 0.2,
+        "y": 4.0
       }
     },
-    "( 59.4  11.0) < ( 60.0  12.0)" : {
+    "( 59.4  11.0) < ( 60.0  12.0)": {
       "sceneId": {
-        "biome" : "CAVE",
-        "scene" : "ROOM2"
+        "biome": "CAVE",
+        "scene": "ROOM2"
       },
-      "spawnPosition" : {
-        "x" : 0.2,
-        "y" : 4.0
+      "spawnPosition": {
+        "x": 0.2,
+        "y": 4.0
       }
     }
-  }
+  },
+  "respawns": {
+    "RESPAWN1": {
+      "zone": "( 38.0  11.0) < ( 39.0  12.0)"
+    }
+  },
+  "deathZones": [
+    {
+      "zone": "( 43.0  5.0) < ( 47.0  6.0)",
+      "type": "SPIKE_4L"
+    }
+  ]
 }
