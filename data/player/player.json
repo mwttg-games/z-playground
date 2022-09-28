@@ -5,23 +5,23 @@
   },
   "animations": {
     "WALK_LEFT": {
-      "frames": 6,
       "spriteSheet": "./data/player/Player_walk_left.png",
+      "frames": 6,
       "timings": [75, 75, 75, 75, 75, 75]
     },
     "WALK_RIGHT": {
-      "frames": 6,
       "spriteSheet": "./data/player/Player_walk_right.png",
+      "frames": 6,
       "timings": [75, 75, 75, 75, 75, 75]
     },
     "IDLE_LEFT": {
-      "frames": 3,
       "spriteSheet": "./data/player/Player_idle_left.png",
+      "frames": 3,
       "timings": [1500, 150, 250]
     },
     "IDLE_RIGHT": {
-      "frames": 3,
       "spriteSheet": "./data/player/Player_idle_right.png",
+      "frames": 3,
       "timings": [1500, 150, 250]
     },
     "JUMP_LEFT": {
@@ -37,18 +37,18 @@
       "spriteSheet": "./data/player/Player_fall_right.png"
     },
     "CLIMB_LADDER_UP": {
-      "frames": 2,
       "spriteSheet": "./data/player/Player_climb.png",
+      "frames": 2,
       "timings": [150, 150]
     },
     "SLIDE_LADDER_DOWN": {
-      "frames": 2,
       "spriteSheet": "./data/player/Player_climb.png",
+      "frames": 2,
       "timings": [150, 150]
     },
     "DUST_EFFECT": {
-      "frames": 6,
       "spriteSheet": "./data/player/Effect_dust.png",
+      "frames": 6,
       "timings": [50, 50, 50, 50, 50, 50]
     }
   }
