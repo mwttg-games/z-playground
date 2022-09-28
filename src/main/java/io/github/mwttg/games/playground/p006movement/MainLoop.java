@@ -3,7 +3,7 @@ package io.github.mwttg.games.playground.p006movement;
 import io.github.mwttg.games.platform.Timer;
 import io.github.mwttg.games.platform.entity.PlayerEntity;
 import io.github.mwttg.games.platform.entity.WorldEntity;
-import io.github.mwttg.games.platform.world.SceneDefinition;
+import io.github.mwttg.games.platform.scene.SceneDefinition;
 import io.github.mwttg.games.playground.common.ProjectionMatrix;
 import io.github.mwttg.games.playground.common.ViewMatrix;
 import java.util.Map;

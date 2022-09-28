@@ -5,7 +5,7 @@ import io.github.mwttg.games.platform.camera.CameraSystem;
 import io.github.mwttg.games.platform.camera.ProjectionMatrix;
 import io.github.mwttg.games.platform.entity.PlayerEntity;
 import io.github.mwttg.games.platform.entity.WorldEntity;
-import io.github.mwttg.games.platform.world.SceneDefinition;
+import io.github.mwttg.games.platform.scene.SceneDefinition;
 import java.util.Map;
 import org.joml.Matrix4f;
 import org.lwjgl.glfw.GLFW;
